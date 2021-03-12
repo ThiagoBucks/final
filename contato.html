@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Desenvolvimento - Thiago</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Site desenvolvido Por MiM" />
+	<meta name="author" content="Thiago Galvão" />
+	<link rel="stylesheet" type="text/css" href="estilos.css" />
+	<link rel="stylesheet" type="text/css" href="normalize.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Roboto?preview.text_type=custom&selection.family=Roboto:wght@100;400;700" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body>
+
+	<div class="header">
+		<div class="linha">
+			<header>
+				<input class="ele" type="button" value="Avançar" onclick="window.history.forward()" />
+				<input class="ele" type="button" value="Retroceder" onclick="window.history.back()" />
+				<div class="coluna col4">
+					<h1 class="logo" onmouseover="funcao1(this)" onmouseout="funcao2(this)">Palmeiras</h1>
+				</div>
+				<div class="coluna col8">
+					<ul class="menu inline sem marcador">
+						<li><a href="index.html" title="Página de Inicio" onmouseover="ricardo1(this)" onmouseout="ricardo2(this)">Inicio</a></li>
+						<li><a href="parceiros.html" title="Página dos Parceiros" onmouseover="ricardo3(this)" onmouseout="ricardo4(this)">Parceiros</a></li>
+						<li><a href="contato.html" title="Meu Contato" onmouseover="ricardo5(this)" onmouseout="ricardo6(this)">Tel Contato</a></li>
+						<li><a href="tabela.html" title="Tabela" onmouseover="tira(this)" onmouseout="tira2(this)">Tabela do BR</a></li>
+					</ul>
+				</div>
+			</header>
+		</div>
+	</div>
+	<div class="linha">
+		<section>
+			<div class="coluna col4">
+				<h4 class="subtitulo" onmouseover="jogo1(this)" onmouseout="jogo2(this)" id="love2">Localização</h4>
+				<img src="localizacao.png" alt="imagem" class="localizacao" />
+				<p>Rua:<strong> António Pinto Veira</strong></p>
+				<p>Bairro:<strong> Villa Espanhola</strong></p>
+				<p>Cidade:<strong> São Paulo - SP</strong></p>
+				<h4 class="subtitulo" onmouseover="jogo3(this)" onmouseout="jogo4(this)" id="love3">Contato Direto</h4>
+				<ul>
+					<li><em>Tel: 99999-9999</em></li>
+					<li><em>Email: thiago2001m@gmail.com</em></li>
+				</ul>
+			</div>
+			<div class="coluna col18">
+				<h3 class="subtitulo" onmouseover="thi1(this)" onmouseout="thi2(this)" id="love">Preencha Nosso Formulario</h3>	
+					<label class="label" for="nome"><strong>Seu Nome:</strong></label>
+						<input class="label" id="jota" type="text" name="seu nome" placeholder="Digite Seu Nome" />
+						<button class="botao" id="jota" onclick="verifica()">Enviar</button>
+						<h5 id="msg" class="pili"></h5>
+					<label class="label" for="Email"><strong>Seu Email:</strong></label>
+						<input class="label" id="pal" type="text" name="Email" placeholder="Digite Seu Email" />
+						<button class="botao" id="pal" onclick="verifica02()">Enviar</button>
+						<h5 id="xota"></h5>
+					<label class="label" for="assunto"><strong>Assunto:</strong></label>
+						<input class="label" id="fla"  name="Assunto" type="text" placeholder="Assunto" />
+						<button class="botao" id="fla" onclick="verifica03()">Enviar</button>
+						<h5 id="bot"></h5>
+					<label class="label" for="mensagem"><strong>Mensagem</strong></label>
+						<textarea class="label" id="gre" name="Mensagem" placeholder="Deixe Uma Mensagem"></textarea>	
+						<button class="botao" id="gre" onclick="verifica04()">Enviar</button>
+		                <h5 id="int"></h5>	               
+			</div>
+		</section>	
+	</div>
+	<div class="article">
+	<div class="conteudo extra">
+		<div class="linha">
+			<section>
+				<div class="coluna col4">
+					<h2 class="subtitulo" onmouseover="para(this)"  id="para">Jogadores Historicos</h2>
+					<p>Marcos iniciou sua carreira no modesto Lençoense da cidade de Lençóis Paulista, onde atuou nas categorias de base do clube até 1992, quando foi contratado pelo Palmeiras e se tornou atleta profissional. Antes de ser contratado pelo Palmeiras, o atleta teve uma breve passagem de três meses pelo rival Corinthians, por empréstimo do Lençoense, porém não foi oficialmente registrado pelo clube junto à Federação Paulista de Futebol</p><p>Em 1997, Scolari levou Arce junto consigo para o Palmeiras, onde também foi multicampeão: venceram a Copa do Brasil de 1998, Copa Mercosul de 1998 e a Taça Libertadores da América de 1999, sendo de novo vice-campeão intercontinental de 1999. Em 2000, Arce ainda ganhou pelo Palmeiras o Torneio Rio-São Paulo de 2000 e a Copa dos Campeões de 2000, torneio de abrangência nacional, que levou novamente o Palmeiras à Libertadores.</p>
+				</div>
+				<div class="coluna col8">
+					<h3 class="subtitulo" onmouseover="para2(this)" id="para2">Noticias</h3>
+					<ul class="sem marcador sem padding">
+						<li>
+							<img src="dudu.png" alt="Jogador" class="dudu" />
+							<h4 class="subtitulo" onmouseover="para3(this)" id="para3">Jogador Sofre Com Joelho</h4>
+							<p> chupa curintia, Após intensa disputa pela contratação do atleta entre Corinthians e São Paulo <a href="" title="" class="polo">Leia Mais</a></p>
+					   </li>
+					   <li>
+							<img src="dudu.png" alt="Jogador" class="dudu" />
+							<h4 class="subtitulo" onmouseover="para4(this)" id="para4">Jogador Sofre Com Joelho</h4>
+							<p> chupa curintia, Após intensa disputa pela contratação do atleta entre Corinthians e São Paulo <a href="" title="" class="polo">Leia Mais</a></p>
+					   </li>
+					   <li>
+							<img src="dudu.png" alt="Jogador" class="dudu" />
+							<h4 class="subtitulo" onmouseover="para5(this)" id="para5">Jogador Sofre Com Joelho</h4>
+							<p> chupa curintia, Após intensa disputa pela contratação do atleta entre Corinthians e São Paulo <a href="" title="" class="polo">Leia Mais</a></p>
+					   </li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</div>
+    </div>
+	<div class="footer">
+		<div class="linha">
+			<footer>
+				<div class="coluna col12">
+					<span class="eita">&copy; Sociedade Esportiva Palmeiras - Thiago</span>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script>
+		function verifica(){
+			var x = document.getElementById('jota').value ;
+		try{
+			if (x == '') throw 'Espaço em Branco';
+			if (Number(x)) throw 'Invalido, Somente caractere';
+			document.getElementById('msg').innerHTML = 'Mensagem Enviada com Secesso';
+		}catch(Erro){
+			document.getElementById('msg').innerHTML = 'Erro : ' + Erro;
+		}finally{
+			document.getElementById('jota').value = '';
+		};
+	};
+		function verifica02(){
+			var x = document.getElementById('pal').value ;
+		try{
+			if (x == '') throw 'Espaço em Branco';
+			if (Number(x)) throw 'Invalido, Somente caractere';
+			document.getElementById('xota').innerHTML = 'Mensagem Enviada com Secesso';
+		}catch(Erro){
+			document.getElementById('xota').innerHTML = 'Erro : ' + Erro;
+		}finally{
+			document.getElementById('pal').value = '';
+		};
+	};	
+		function verifica03(){
+			var x = document.getElementById('fla').value ;
+		try{
+			if (x == '') throw 'Espaço em Branco';
+			if (Number(x)) throw 'Invalido, Somente caractere';
+			document.getElementById('bot').innerHTML = 'Mensagem Enviada com Secesso';
+		}catch(Erro){
+			document.getElementById('bot').innerHTML = 'Erro : ' + Erro;
+		}finally{
+			document.getElementById('fla').value = '';
+		};
+	};
+		function verifica04(){
+			var x = document.getElementById('gre').value ;
+		try{
+			if (x == '') throw 'Espaço em Branco';
+			if (Number(x)) throw 'Invalido, Somente caractere';
+			document.getElementById('int').innerHTML = 'Mensagem Enviada com Secesso';
+		}catch(Erro){
+			document.getElementById('int').innerHTML = 'Erro : ' + Erro;
+		}finally{
+			document.getElementById('gre').value = '';
+		}; 
+	};
+
+
+	    function ricardo1(eita1){
+			eita1.innerHTML = "Página Home";
+		};
+		function ricardo2(eita2){
+			eita2.innerHTML = "Inicio";
+		};
+		function ricardo3(eita3){
+			eita3.innerHTML = "Nossos Parceiros";
+		};
+		function ricardo4(eita4){
+			eita4.innerHTML = "Parceiros";
+		};
+		function ricardo5(eita5){
+			eita5.innerHTML = "Site Contato";
+		};
+		function ricardo6(eita6){
+			eita6.innerHTML = "Tel Contato"
+		};
+		function tira(jota){
+			jota.innerHTML = "Brasileirão"
+		};
+		function tira2(jota2){
+			jota2.innerHTML = "Tabela do BR"
+		};
+
+
+		function funcao1(elemento1){
+			elemento1.innerHTML = "Palestra Itália";
+		};
+		function funcao2(elemento2){
+			elemento2.innerHTML = "Palmeiras";
+		};
+
+
+		function thi1(thi){
+			thi.innerHTML = "Formulario Formal";
+			document.getElementById('love').style.color = '#1C1C1C';
+		};
+		//function thi2(thia){
+			//thia.innerHTML = "Preencha Nosso Formulario";
+			//document.getElementById('love').style.color = '#6495ED';
+		//};
+		function jogo1(bas1){
+			bas1.innerHTML = 'Localização';
+			document.getElementById('love2').style.color = '#1C1C1C';
+		};
+		//function jogo2(bas2){
+			//bas2.innerHTML = 'Localização';
+			//document.getElementById('love2').style.color = '#6495ED';
+		//};
+		function jogo3(bas3){
+			bas3.innerHTML = 'Contato Direto';
+			document.getElementById('love3').style.color = '#1C1C1C';
+		};
+		//function jogo4(bas4){
+			//bas4.innerHTML = 'Contato Direto';
+			//document.getElementById('love3').style.color = '#6495ED';
+		//};
+
+
+		function para(ele){
+			ele.innerHTML = 'Jogadores Historicos';
+			document.getElementById('para').style.color = '#1C1C1C';
+		};
+		function para2(ele2){
+			ele2.innerHTML = 'Noticias';
+			document.getElementById('para2').style.color = '#1C1C1C';
+		};
+		function para3(ele3){
+			ele3.innerHTML = 'Jogador Sofre Com Joelho';
+			document.getElementById('para3').style.color = '#1C1C1C';
+		};
+		function para4(ele4){
+			ele4.innerHTML = 'Jogador Sofre Com Joelho';
+			document.getElementById('para4').style.color = '#1C1C1C';
+		};
+		function para5(ele5){
+			ele5.innerHTML = 'Jogador Sofre Com Joelho';
+			document.getElementById('para5').style.color = '#1C1C1C';
+		};
+
+
+		setTimeout(formu, 2000)
+		function formu(){
+			alert("Nos Envie Uma Mensagem");
+		};
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>

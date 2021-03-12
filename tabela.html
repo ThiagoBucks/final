@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app = "polo">
+
+<head>
+	<title>Desenvolvimento - Thiago</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Site desenvolvido Por MiM" />
+	<meta name="author" content="Thiago Galvão" />
+	<link rel="stylesheet" type="text/css" href="estilos.css" />
+	<link rel="stylesheet" type="text/css" href="normalize.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Roboto?preview.text_type=custom&selection.family=Roboto:wght@100;400;700" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+<body ng-controller = "vaga">
+	<div class="header">
+		<div class="linha">
+			<header>
+				<input class="ele" type="button" value="Avançar" onclick="window.history.forward()" />
+				<input class="ele" type="button" value="Retroceder" onclick="window.history.back()" />
+				<div class="coluna col4">
+					<h1 class="logo" onmouseover="funcao1(this)" onmouseout="funcao2(this)">Palmeiras</h1>
+				</div>
+					<nav>
+						<div class="coluna col8">
+							<ul class="menu inline sem marcador">	
+								<li><a href="index.html" title="Página de Inicio" onmouseover="ricardo1(this)" onmouseout="ricardo2(this)">Inicio</a></li>
+								<li><a href="parceiros.html" title="Página dos Parceiros" onmouseover="ricardo3(this)" onmouseout="ricardo4(this)" >Parceiros</a></li>
+								<li><a href="contato.html" title="Meu Contato" onmouseover="ricardo5(this)" onmouseout="ricardo6(this)">Tel Contato</a></li>
+								<li><a href="tabela.html" title="Tabela" onmouseover="tira(this)" onmouseout="tira2(this)">Tabela do BR</a></li>	
+							</ul>
+						</div>
+				    </nav>
+			</header>
+		</div>
+	</div>
+	<div class="linha">
+		<section>
+			<div class="coluna col12">
+				<h2 class="tbt">Tabela do Brasileirão</h2>
+			<div class="row">
+				<input type="text" ng-model = "b" placeholder="Qual Time Você Torce :" />
+			</div>	
+			<div class="jogo">	
+				<table>
+					<thead>
+						<tr>
+							<th><strong>Time</strong></th>
+							<th><strong>Pontos</strong></th>
+							<th><strong>Jogos</strong></th>
+							<th><strong>Vitórias</strong></th>
+						</tr>
+					</thead>
+					<tbody ng-repeat = "tabela in tabelas | filter:b"> 
+							<tr>
+								<th ng-bind = "tabela.time"></th>
+								<th ng-bind = "tabela.pontos"></th>
+								<th ng-bind = "tabela.jogos"></th>
+								<th ng-bind = "tabela.vitorias"></th>	
+							</tr>	
+					</tbody>
+				</table>
+		    </div>
+			</div>
+		</section>	
+	</div>
+	<div class="article">
+	<div class="conteudo extra">
+		<div class="linha">
+			<section>
+				<div class="coluna col4">
+					<h2 class="subtitulo" onmouseover="para(this)"  id="para">Cam - BR</h2>
+					<p>A História da Sociedade Esportiva Palmeiras começa no dia 26 de agosto de 1914, quando o clube foi fundado por imigrantes italianos na cidade de São Paulo com o nome de Palestra Italia.[27] A primeira partida da equipe foi disputada em 24 de janeiro de 1915 contra o Savóia,do atual município de Votorantim, à época distrito de Sorocaba, no interior paulista, e contou com a vitória palestrina por 2 a 0, com gols de Bianco e Alegretti.</p> <p>depois de colecionar nas décadas de 20 e 30 do Século XX uma série de títulos paulistas e conquistar uma quantidade relevante de torcedores, o clube foi obrigado[28] a mudar seu nome para Sociedade Esportiva Palmeiras em 1942, por ocasião da Segunda Guerra Mundial, já que o Brasil, governado pelo então presidente Getúlio Vargas, declarou guerra aos países do "Eixo" (Alemanha, Itália e Japão) e se alinhou aos países "Aliados", (Estados Unidos, União Soviética, Reino Unido, França, e outros).</p>
+				</div>
+				<div class="coluna col8">
+					<h3 class="subtitulo" onmouseover="para2(this)" id="para2">Noticias</h3>
+					<ul class="sem marcador sem padding">
+						<li>
+							<img src="dudu.png" alt="Jogador" class="dudu" />
+							<h4 class="subtitulo" onmouseover="para3(this)" id="para3">Jogador Sofre Com Joelho</h4>
+							<p> chupa curintia, Após intensa disputa pela contratação do atleta entre Corinthians e São Paulo <a href="" title="" class="polo">Leia Mais</a></p>
+					   </li>
+					   <li>
+							<img src="dudu.png" alt="Jogador" class="dudu" />
+							<h4 class="subtitulo" onmouseover="para4(this)" id="para4">Jogador Sofre Com Joelho</h4>
+							<p> chupa curintia, Após intensa disputa pela contratação do atleta entre Corinthians e São Paulo <a href="" title="" class="polo">Leia Mais</a></p>
+					   </li>
+					   <li>
+							<img src="dudu.png" alt="Jogador" class="dudu" />
+							<h4 class="subtitulo" onmouseover="para5(this)" id="para5">Jogador Sofre Com Joelho</h4>
+							<p> chupa curintia, Após intensa disputa pela contratação do atleta entre Corinthians e São Paulo <a href="" title="" class="polo">Leia Mais</a></p>
+					   </li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</div>
+    </div>
+	<div class="footer">
+		<div class="linha">
+			<footer>
+				<div class="coluna col12">
+					<span class="eita">&copy; Sociedade Esportiva Palmeiras - Thiago</span>
+				</div>
+			</footer>
+		</div>
+	</div>
+	<script>
+		//var x = setInterval(foco, 1000);
+		//contador = 0
+		//function foco(){
+		//	if (document.hasFocus()) {
+		//		contador ++
+		//		console.log(contador);
+		//	}if (contador > 2) {
+		//		alert("Visite O Site dos Nossos Parceiros, CREFISA,FAM,PUMA");
+		//		clearInterval(x);
+		//	};
+		//};
+
+		alert("nossa URL do site = " + window.location.href);
+
+
+		function funcao1(elemento1){
+			elemento1.innerHTML = "Palestra Itália";
+		};
+		function funcao2(elemento2){
+			elemento2.innerHTML = "Palmeiras";
+		};
+
+
+		function ricardo1(eita1){
+			eita1.innerHTML = "Página Home";
+		};
+		function ricardo2(eita2){
+			eita2.innerHTML = "Inicio";
+		};
+		function ricardo3(eita3){
+			eita3.innerHTML = "Nossos Parceiros";
+		};
+		function ricardo4(eita4){
+			eita4.innerHTML = "Parceiros";
+		};
+		function ricardo5(eita5){
+			eita5.innerHTML = "Site Contato";
+		};
+		function ricardo6(eita6){
+			eita6.innerHTML = "Tel Contato"
+		};
+		function tira(jota){
+			jota.innerHTML = "Brasileirão"
+		};
+		function tira2(jota2){
+			jota2.innerHTML = "Tabela do BR"
+		};
+
+
+
+		function para(ele){
+			ele.innerHTML = 'Cam - BR';
+			document.getElementById('para').style.color = '#1C1C1C';
+		};
+		function para2(ele2){
+			ele2.innerHTML = 'Noticias';
+			document.getElementById('para2').style.color = '#1C1C1C';
+		};
+		function para3(ele3){
+			ele3.innerHTML = 'Jogador Sofre Com Joelho';
+			document.getElementById('para3').style.color = '#1C1C1C';
+		};
+		function para4(ele4){
+			ele4.innerHTML = 'Jogador Sofre Com Joelho';
+			document.getElementById('para4').style.color = '#1C1C1C';
+		};
+		function para5(ele5){
+			ele5.innerHTML = 'Jogador Sofre Com Joelho';
+			document.getElementById('para5').style.color = '#1C1C1C';
+		};
+	</script>
+
+	<script src="angular.min.js"></script>
+
+	<script type="text/javascript">
+		angular.module("polo",[])
+		.controller("vaga",function($scope){
+			$scope.tabelas = [
+			{time:"1* Palmeiras", pontos:78, jogos:38, vitorias:31},
+			{time:"2* Flamengo", pontos:76, jogos:38, vitorias:30},
+			{time:"3* Atletico", pontos:70, jogos:38, vitorias:28},
+			{time:"4* Gremio", pontos:69, jogos:38, vitorias:28},
+			{time:"5* Santos", pontos:65, jogos:38, vitorias:26},
+			{time:"6* Athelico", pontos:63, jogos:38, vitorias:25},
+			{time:"7* Fluminense", pontos:60, jogos:38, vitorias:23},
+			{time:"8* Bragantino", pontos:57, jogos:38, vitorias:22},
+			{time:"9* Internacional", pontos:54, jogos:38, vitorias:20},
+			{time:"10* Vasco", pontos:51, jogos:38, vitorias:19},
+			{time:"11* Bahia", pontos:49, jogos:38, vitorias:17},
+			{time:"12* Sport", pontos:45, jogos:38, vitorias:15},
+			{time:"13* Botafogo", pontos:45, jogos:38, vitorias:14},
+			{time:"14* Coritiba", pontos:43, jogos:38, vitorias:14},
+			{time:"15* Goias", pontos:40, jogos:38, vitorias:13},
+			{time:"16* Cruzeiro", pontos:39, jogos:38, vitorias:12},
+			{time:"17* Cuiaba", pontos:37, jogos:38, vitorias:11},
+			{time:"18* Chapecoense", pontos:37, jogos:38, vitorias:10},
+			{time:"19* Ponte Preta", pontos:33, jogos:38, vitorias:9},
+			{time:"20* Villa Nova", pontos:30, jogos:38, vitorias:9} ];
+		});
+	</script>
+	 
+
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+</body>
+
+</html>
